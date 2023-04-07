@@ -114,3 +114,30 @@ KoNLPy Webpage: https://konlpy.org/en/latest/install/#id1
       - Equally sampling the percentage of positive/negative reviews (i.e. random guess yields 50% accuracy)
       - Does not include neutral reviews
 
+</br>
+
+  ### 1-2. Sentiment analysis definition
+
+</br>
+   <img width="514" alt="Capture d’écran 2023-04-07 à 15 53 13" src="https://user-images.githubusercontent.com/63314860/230620396-9545a817-0db0-4f02-b17e-e90b16c4780d.png">
+
+</br>
+
+
+   - Reference : https://www.kdnuggets.com/2018/03/5-things-sentiment-analysis-classification.html
+
+
+
+   - Natural Language Processing, Text Analysis, Computational Lingustics, and biometrics are used to find out the author's intention or information hidden in the text.
+   - It is also called Opinion Mining, Sentiment Mining, and Subjectivity Analysis.
+
+
+   - The early methods were tried a lot to find the polarity of the text. A typical example is the case of dividing into <b>positive/negative</b>.
+
+</br>
+
+   - Sentiment analysis is largely divided into a knowledge-based approach and a machine learning-based approach.
+
+      > Knowledge-based is a method that imports data that has already been evaluated by human experts using known phrases, endings, and idiomatic expressions.
+
+      > ML-based approach has supervised and unsupervised methods. Recently, as pretrained language models have been developed by leaps and bounds, the performance of unsupervised methods has increased, but supervised is still superior in terms of performance.
