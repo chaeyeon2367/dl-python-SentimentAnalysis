@@ -27,6 +27,11 @@ Install MeCab (optional)
 ```
 $bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
 ```
+Install Gensim for topic modeling
+```
+$pip install gensim
+$conda install -c conda-forge gensim
+```
 
 KoNLPy Webpage: https://konlpy.org/en/latest/install/#id1
 
@@ -52,14 +57,14 @@ KoNLPy Webpage: https://konlpy.org/en/latest/install/#id1
 
 ## 3. Topic Modeling 
 
-### Definition
+### 1.1 Definition
 
  - The process of finding topics (keywords) in an article
  - The process of finding a "set of k words" from a combination of words that make up a document (sentence).
  - It is a Bayesian probability model, and the result of topic modeling is the probability that each word belongs to each topic. 
 
 
-### History 
+### 1.2 History 
 
 - LSI (Latent Semantic Indexing): 
   - SVD on the document word matrix. 
@@ -94,3 +99,18 @@ KoNLPy Webpage: https://konlpy.org/en/latest/install/#id1
     4. add the word to the document (write).
 
     5. Repeat from step 2. 
+
+</br>
+
+## 4. NSMC Sentiment Analysis 
+
+  ### 1-1. NSMC (Naver Sentiment Movie Corpus v1.0) 
+   - url : https://github.com/e9t/nsmc
+   - size : 19MB
+   - Data source: Naver
+   - No more than 100 140 ratings (reviews) per movie
+   - Total 200,000 reviews (sampled from 640,000 collected)
+      - 'ratings_train.txt : 150,000 , 'ratings_test.txt : 50,000
+      - Equally sampling the percentage of positive/negative reviews (i.e. random guess yields 50% accuracy)
+      - Does not include neutral reviews
+
