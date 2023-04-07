@@ -108,7 +108,7 @@ KoNLPy Webpage: https://konlpy.org/en/latest/install/#id1
    - url : https://github.com/e9t/nsmc
    - size : 19MB
    - Data source: Naver
-   - No more than 100 140 ratings (reviews) per movie
+   - No more than 100,140 ratings (reviews) per movie
    - Total 200,000 reviews (sampled from 640,000 collected)
       - 'ratings_train.txt : 150,000 , 'ratings_test.txt : 50,000
       - Equally sampling the percentage of positive/negative reviews (i.e. random guess yields 50% accuracy)
