@@ -1,7 +1,7 @@
 </br>
 </br>
 
-# Sentiment Analysis with NSMC and LSTM 😝
+# Sentiment Analysis with NSMC and LSTM 🫥
 </br>
 
 ## 1. Crawling - get NAVER News data
