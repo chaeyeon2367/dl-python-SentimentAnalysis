@@ -104,7 +104,7 @@ KoNLPy Webpage: https://konlpy.org/en/latest/install/#id1
 
 ## 4. NSMC Sentiment Analysis 
 
-  ### 1-1. NSMC (Naver Sentiment Movie Corpus v1.0) 
+  ### 4-1. NSMC (Naver Sentiment Movie Corpus v1.0) 
    - url : https://github.com/e9t/nsmc
    - size : 19MB
    - Data source: Naver
@@ -116,7 +116,7 @@ KoNLPy Webpage: https://konlpy.org/en/latest/install/#id1
 
 </br>
 
-  ### 1-2. Sentiment analysis definition
+  ### 4-2. Sentiment analysis definition
 
 </br>
    <img width="514" alt="Capture d’écran 2023-04-07 à 15 53 13" src="https://user-images.githubusercontent.com/63314860/230620396-9545a817-0db0-4f02-b17e-e90b16c4780d.png">
@@ -141,3 +141,36 @@ KoNLPy Webpage: https://konlpy.org/en/latest/install/#id1
       > Knowledge-based is a method that imports data that has already been evaluated by human experts using known phrases, endings, and idiomatic expressions.
 
       > ML-based approach has supervised and unsupervised methods. Recently, as pretrained language models have been developed by leaps and bounds, the performance of unsupervised methods has increased, but supervised is still superior in terms of performance.
+
+</br>
+
+### 4-3. NSMC Sentiment Analysis with Machine learning
+
+- Experimental results (Test accuracy)
+  
+  |Model|**linear classifier**|**SVM classifier**|
+  |------|---|---|
+  |Nouns only|0.51|0.53|
+  |no Preprocessing|0.67|0.72|
+  |Preprocessing|0.71|0.76|
+  |TfidfVectorizer|0.70|0.81|
+  |All features|0.77|0.82|
+
+
+- Conclusion
+
+  1. extracting only nouns does not provide clear information on the classification problem of NSMC data. 
+
+  2. There is a difference in performance with and without preprocessing. Since there are many special characters in NSMC data, excluding special characters makes the tokens more canonical (text normalization). 
+
+  3. It is more performant to use all dimension sources rather than truncating the top 500 with high frequency. 
+
+  4. Comparison performance Countvectorizer vs TF-IDF Vectorizer : The accuracy of the Countvectorizer was slightly higher than that of the TF-IDF Vectorizer. 
+
+  5. Tuning hyperparameters for better performance
+
+
+</br>
+
+
+### 4-4. NSMC Sentiment Analysis with LSTM
