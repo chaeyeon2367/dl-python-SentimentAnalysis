@@ -1,0 +1,2 @@
+model_checkpoint_path: "nsmc_keras_simplelstm"
+all_model_checkpoint_paths: "nsmc_keras_simplelstm"

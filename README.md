@@ -153,7 +153,7 @@ KoNLPy Webpage: https://konlpy.org/en/latest/install/#id1
   |Nouns only|0.51|0.53|
   |no Preprocessing|0.67|0.72|
   |Preprocessing|0.71|0.76|
-  |TfidfVectorizer|0.70|0.81|
+  |TfidfVectorizer|0.71|0.81|
   |All features|0.77|0.82|
 
 
