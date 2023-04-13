@@ -174,3 +174,22 @@ KoNLPy Webpage: https://konlpy.org/en/latest/install/#id1
 
 
 ### 4-4. NSMC Sentiment Analysis with LSTM
+
+  - LSTM : Long Short-Term Memory, and it's a type of recurrent neural network (RNN) that's commonly used in natural language processing and other sequential data tasks.
+
+  - Set Hyper Parameter 
+    - max_words = 35000
+    - max_len = 30   
+    - batch_size = 128
+    - EPOCHS = 100
+
+  - Experimental results (Test accuracy)
+
+  |Model|**LSTM**|
+  |------|---|
+  |Test Score|1.062|
+  |Test Accuracy|0.7995|
+
+  - Conclusion
+
+    - The final results of deep learning model(LSTM) are similar to the accuracy of the machine learning model.
